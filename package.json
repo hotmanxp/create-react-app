@@ -47,6 +47,7 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
+    "dev": "run-p server start",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
@@ -114,6 +115,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.17.2",
-    "less-loader": "^4.0.5"
+    "less-loader": "^4.0.5",
+    "npm-run-all": "^4.0.2"
   }
 }
