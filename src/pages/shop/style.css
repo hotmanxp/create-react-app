@@ -1,0 +1,11 @@
+.sub-menu {
+    display: flex;
+}
+
+.subTab {
+    flex: 1;
+    background-color: yellow;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer; 
+}
