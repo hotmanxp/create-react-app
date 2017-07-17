@@ -25,7 +25,7 @@ class Me extends Component {
     render() {
         return (
             <div className='me-page'>
-                Me page
+                This is page to show handle simulators
                 <button onClick={() => this.changeInfo()}>Change</button>
                 <div className="sub-box">
                     {'name: ' + this.state.name}

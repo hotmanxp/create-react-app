@@ -11,7 +11,7 @@ class Shop extends Component {
         let { match } = this.props
         return (
             <div className='me-page'>
-                This is shop page!!
+                This is page to show how to implement nest route
                 {subMenu.length}
                 <div className='sub-menu'>
                     {subMenu.map((i, idx) => <Link to={`${match.url}/tab${idx + 1}`} className="subTab" key={idx + 'router'}>
