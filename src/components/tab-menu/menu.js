@@ -4,6 +4,7 @@ import Shop from '../../pages/shop'
 import Me from '../../pages/me'
 import Watch from '../../pages/watch'
 import Mobx from '../../pages/mobx'
+import Comunication from '../../pages/comunication'
 export default [
     {
         text: 'Home',
@@ -29,6 +30,11 @@ export default [
         text: 'Mobx',
         link: '/mobx',
         Cmp: Mobx
+    },
+    {
+        text: 'Comunication',
+        link: '/comunication',
+        Cmp: Comunication
     },
     {
         text: 'Test',
