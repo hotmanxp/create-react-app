@@ -9,13 +9,7 @@ class MobxExample extends Component {
         this.userInfo = new UserInfo()
 
     }
-    tract () {
-        let age = this.userInfo.unSee
-        console.log('ddd')
-    }
     render() {
-        //this.userInfo.unSee
-        console.log('render')
         return (
             <div>
                 <p>This is mobx example</p>
