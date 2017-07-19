@@ -18,4 +18,4 @@ class Infos {
         this.name = newName
     }
 }
-export default new Infos()
+export default Infos
