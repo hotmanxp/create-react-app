@@ -17,14 +17,9 @@ export default [
         Cmp: Shop
     },
     {
-        text: 'My watch',
-        link: '/watch',
+        text: 'Redux',
+        link: '/redux-example',
         Cmp: Watch
-    },
-    {
-        text: 'Me',
-        link: '/me',
-        Cmp: Me
     },
     {
         text: 'Mobx',
@@ -35,6 +30,11 @@ export default [
         text: 'Comunication',
         link: '/comunication',
         Cmp: Comunication
+    },
+    {
+        text: 'API',
+        link: '/api-server',
+        Cmp: Me
     },
     {
         text: 'Test',
