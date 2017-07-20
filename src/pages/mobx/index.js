@@ -20,7 +20,6 @@ class MobxExample extends Component {
                     <button onClick={() => {this.userInfo.addAge()}}>Add</button>
                 </div>
                 <div>
-                    <button onClick={() => {this.userInfo.changeUnsee()}}>Change un-see</button>
                 </div>
                 <div>{`Time is ${Time.time}`}</div>
             </div>
