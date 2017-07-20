@@ -1,12 +1,19 @@
 const express = require('express')
 const router = express.Router()
+let _ = require('lodash')
 
 let info = {
     name: 'lfm',
     age: 20
 }
+let bak = _.cloneDeep(info)
 
 router.get('/', (req, res) => {
+    res.send(info)
+})
+
+router.get('/back', (req, res) => {
+    info = _.cloneDeep(bak)
     res.send(info)
 })
 router.post('/', (req, res) => {

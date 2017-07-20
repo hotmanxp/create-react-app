@@ -21,12 +21,20 @@ class Me extends Component {
          let result = await Api.fetch('api/test', 'post', {name: 'lxc', age: 34})
         this.setState({name: result.name, age: result.age})
     }
+
+    async setBack () {
+        let result = await Api.fetch('api/test/back')
+        this.setState({name: result.name, age: result.age})
+    }
     
     render() {
         return (
             <div className='me-page'>
                 This is page to show handle simulators
-                <button onClick={() => this.changeInfo()}>Change</button>
+                <div>
+                    <button onClick={() => this.changeInfo()}>Change</button>
+                    <button onClick={() => this.setBack()}>Set Back from server</button>
+                </div>
                 <div className="sub-box">
                     {'name: ' + this.state.name}
                     <br />

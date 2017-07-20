@@ -11,8 +11,8 @@ class Home extends Component {
                     <h2>Welcome to React</h2>
                 </div>
                 <p className="App-intro">
-                    <Link to='/me' >To Me</Link>
-                    I have started now, edit11 <code>src/App.js</code> and save to reload.
+                    <Link to='/mobx' >To Mobx</Link>
+                    You can import resource, css, less now, and code is hot reload!
                 </p>
             </div>
         );
