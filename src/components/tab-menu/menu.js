@@ -5,6 +5,7 @@ import Me from '../../pages/me'
 import Watch from '../../pages/watch'
 import Mobx from '../../pages/mobx'
 import Comunication from '../../pages/comunication'
+import AntD from '../../pages/antd'
 export default [
     {
         text: 'Home',
@@ -35,6 +36,11 @@ export default [
         text: 'API',
         link: '/api-server',
         Cmp: Me
+    },
+    {
+        text: 'Antd',
+        link: '/ant-design',
+        Cmp: AntD
     },
     {
         text: 'Test',
