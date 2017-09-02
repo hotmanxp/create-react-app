@@ -54,23 +54,23 @@ measureFileSizesBeforeBuild(paths.appBuild)
   .then(
     ({ stats, previousFileSizes, warnings }) => {
       if (warnings.length) {
-        console.log(chalk.yellow('Compiled with warnings.\n'))
-        console.log(warnings.join('\n\n'))
-        console.log(
+        console.log(chalk.yellow('Compiled with warnings.\n')) // eslint-disable-line no-console
+        console.log(warnings.join('\n\n')) // eslint-disable-line no-console
+        console.log( // eslint-disable-line no-console
           '\nSearch for the ' +
             chalk.underline(chalk.yellow('keywords')) +
             ' to learn more about each warning.'
         )
-        console.log(
+        console.log( // eslint-disable-line no-console
           'To ignore, add ' +
             chalk.cyan('// eslint-disable-next-line') +
             ' to the line before.\n'
         )
       } else {
-        console.log(chalk.green('Compiled successfully.\n'))
+        console.log(chalk.green('Compiled successfully.\n')) // eslint-disable-line no-console
       }
 
-      console.log('File sizes after gzip:\n')
+      console.log('File sizes after gzip:\n') // eslint-disable-line no-console
       printFileSizesAfterBuild(
         stats,
         previousFileSizes,
@@ -78,7 +78,7 @@ measureFileSizesBeforeBuild(paths.appBuild)
         WARN_AFTER_BUNDLE_GZIP_SIZE,
         WARN_AFTER_CHUNK_GZIP_SIZE
       )
-      console.log()
+      console.log() // eslint-disable-line no-console
 
       const appPackage = require(paths.appPackageJson)
       const publicUrl = paths.publicUrl
@@ -93,15 +93,15 @@ measureFileSizesBeforeBuild(paths.appBuild)
       )
     },
     err => {
-      console.log(chalk.red('Failed to compile.\n'))
-      console.log((err.message || err) + '\n')
-      process.exit(1)
+      console.log(chalk.red('Failed to compile.\n')) // eslint-disable-line no-console
+      console.log((err.message || err) + '\n') // eslint-disable-line no-console
+      process.exit(1) // eslint-disable-line no-console
     }
   )
 
 // Create the production build and print the deployment instructions.
 function build (previousFileSizes) {
-  console.log('Creating an optimized production build...')
+  console.log('Creating an optimized production build...') // eslint-disable-line no-console
 
   let compiler = webpack(config)
   return new Promise((resolve, reject) => {
@@ -119,7 +119,7 @@ function build (previousFileSizes) {
           process.env.CI.toLowerCase() !== 'false') &&
         messages.warnings.length
       ) {
-        console.log(
+        console.log( // eslint-disable-line no-console
           chalk.yellow(
             '\nTreating warnings as errors because process.env.CI = true.\n' +
               'Most CI servers set it automatically.\n'

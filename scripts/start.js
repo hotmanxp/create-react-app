@@ -68,12 +68,12 @@ choosePort(HOST, DEFAULT_PORT)
     // Launch WebpackDevServer.
     devServer.listen(port, HOST, err => {
       if (err) {
-        return console.log(err)
+        return console.log(err) // eslint-disable-line no-console
       }
       if (isInteractive) {
         clearConsole()
       }
-      console.log(chalk.cyan('Starting the development server...\n'))
+      console.log(chalk.cyan('Starting the development server...\n')) // eslint-disable-line no-console
       openBrowser(urls.localUrlForBrowser)
     });
 
@@ -86,7 +86,7 @@ choosePort(HOST, DEFAULT_PORT)
   })
   .catch(err => {
     if (err && err.message) {
-      console.log(err.message)
+      console.log(err.message) // eslint-disable-line no-console
     }
     process.exit(1)
   })

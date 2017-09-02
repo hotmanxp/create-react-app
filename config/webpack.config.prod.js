@@ -40,8 +40,8 @@ const cssFilename = 'static/css/[name].[contenthash:8].css'
 // However, our output is structured with css, js and media folders.
 // To have this structure working with relative paths, we have to use custom options.
 const extractTextPluginOptions = shouldUseRelativeAssetPaths
-  ? // Making sure that the publicPath goes back to to build folder.
-    { publicPath: Array(cssFilename.split('/').length).join('../') }
+  // Making sure that the publicPath goes back to to build folder.
+  ? { publicPath: Array(cssFilename.split('/').length).join('../') }
   : {}
 
 // This is the production configuration.
@@ -306,7 +306,7 @@ module.exports = {
           // https://github.com/facebookincubator/create-react-app/issues/2612
           return
         }
-        console.log(message)
+        console.log(message) // eslint-disable-line no-console
       },
       minify: true,
       // For unknown URLs, fallback to the index page
