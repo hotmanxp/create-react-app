@@ -56,8 +56,8 @@ class AntD extends Component {
                     <Button onClick={() => this.distroy()}>Destroy</Button>
                 </div>
             </div>
-        );
+        )
     }
 }
 
-export default AntD;
+export default AntD

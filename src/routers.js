@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {HashRouter as Router, Route} from 'react-router-dom'
 import menus from './components/tab-menu/menu'
 import Tabs from './components/tab-menu'
@@ -10,5 +10,4 @@ const Routes = () => <Router>
         </div>
     </Router>
 
-
-export default Routes;
+export default Routes
