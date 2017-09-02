@@ -2,8 +2,6 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const test = require('./api/test')
 
-
-
 const server = express.Router()
 server.use('/test', test)
 

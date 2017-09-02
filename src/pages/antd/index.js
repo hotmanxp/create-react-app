@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import 'antd/dist/antd.less';
+import React, { Component } from 'react'
+import 'antd/dist/antd.less'
 import './style.less'
 import { DatePicker, InputNumber, Button } from 'antd'
-import {render, unmountComponentAtNode, findDOMNode} from 'react-dom'
+import { render, unmountComponentAtNode, findDOMNode } from 'react-dom'
 
 class AntD extends Component {
     constructor (props) {

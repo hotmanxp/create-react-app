@@ -8,7 +8,7 @@ class Tabs extends Component {
     render() {
         return (
             <div className='menu-tab'>
-                {menus.map(menu => <Link activeStyle={{color: 'white'}} className='tab' key={menu.link}to={menu.link}>{menu.text}</Link>)}
+                {menus.map(menu => <Link activeStyle={{color: 'white'}} className='tab' key={menu.link} to={menu.link}>{menu.text}</Link>)}
 
             </div>
         );
